@@ -13,6 +13,7 @@ spec:
     metadata:
       labels:
         {{- include "hello-world.selectorLabels" . | nindent 8 }}
+        test: hellolabel
     spec:
       serviceAccountName: {{ include "hello-world.serviceAccountName" . }}
       containers:
